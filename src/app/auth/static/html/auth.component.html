@@ -1,0 +1,14 @@
+<div class="card card-block">
+    <h4 class="card-title">Authentication</h4>
+    <div class="panel-body">
+        <div class="form">
+            <div class="alert alert-info" *ngIf="!checkComplete">
+                <b>Authenticating...</b>
+            </div>
+            <div *ngIf="checkComplete">
+                <a class="btn btn-primary" [routerLink]="['/login']">LOGIN</a>
+                <a class="btn btn-success" [routerLink]="['/register']">REGISTER</a>
+            </div>
+        </div>
+    </div>
+</div>

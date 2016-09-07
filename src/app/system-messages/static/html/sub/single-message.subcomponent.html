@@ -1,0 +1,10 @@
+<div class="alert" *ngIf="message"
+    [class.alert-primary]="message.disp=='primary'"
+    [class.alert-default]="message.disp=='default'"
+    [class.alert-success]="message.disp=='success'"
+    [class.alert-info]="message.disp=='info'"
+    [class.alert-warning]="message.disp=='warning'"
+    [class.alert-danger]="message.disp=='danger'"
+    >
+    <b>{{ message.keyword }}.</b> {{ message.message }}
+</div>
