@@ -4,8 +4,19 @@ import { AppComponent } from './';
 import { AuthComponent, LandingComponent, LoginComponent, LogoutComponent,
      RegisterComponent }
     from './auth';
+import { BejeweledComponent } from '../bejeweled/bejeweled.component';
 
 const routes: RouterConfig = [
+    {
+        component: BejeweledComponent,
+        path: 'bejeweled'
+    },
+    {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: '/bejeweled'
+    }
+     /*
     {
         component: LandingComponent,
         path: ''
@@ -32,6 +43,7 @@ const routes: RouterConfig = [
         component: RegisterComponent,
         path: 'register'
     }
+    */
 ];
 
 export const appRouterProviders = [
